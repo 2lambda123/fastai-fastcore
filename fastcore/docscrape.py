@@ -93,6 +93,7 @@ class ParseError(Exception):
 
 
 class NumpyDocString(Mapping):
+    sections = { 'Summary': [''], 'Extended': [], 'Parameters': [], 'Returns': [] }
     """Parses a numpydoc string to an abstract representation """
     sections = { 'Summary': [''], 'Extended': [], 'Parameters': [], 'Returns': [] }
 
